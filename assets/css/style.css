@@ -1,0 +1,84 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/* body css */
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fff;
+}
+
+/* main header css */
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-item {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.nav-link,
+.brand-link {
+    padding: 5px 10px;
+    font-size: 21px;
+    text-decoration: none;
+    transition: all 0.1s ease-in-out;
+    border-radius: 10px;
+    color: #002333;
+}
+
+.nav-link:hover,
+.brand-link:hover {
+    background-color: #DEEFE7;
+}
+
+/*  container css */
+
+.container {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 20px;
+    color: #002333;
+}
+
+.pl-2 {
+    padding: 0 30px;
+}
+
+.pl-1 {
+    padding: 0 25px;
+}
+
+/* home css */
+
+.home {
+    margin-top: 80px;
+}
+
+.name-heading {
+    margin-top: -15px;
+}
+
+.sub-heading {
+    font-size: 21px;
+}
+
+#lblGreetings {
+    font-size: 32px;
+}
+
+.greeting {
+    margin-bottom: 20px;
+}

@@ -64,11 +64,15 @@ body {
 /* home css */
 
 .home {
-    margin-top: 80px;
+    margin: 80px auto;
+    display: flex;
+    align-items: center;
+    max-width: 760px;
 }
 
 .name-heading {
     margin-top: -15px;
+    margin-bottom: -15px;
 }
 
 .sub-heading {
@@ -81,4 +85,23 @@ body {
 
 .greeting {
     margin-bottom: 20px;
+}
+
+.john-img {
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* media css */
+
+@media screen and (min-width: 0px) and (max-width: 652px) {
+    .home {
+        flex-direction: column;
+    }
+
+    .john-img {
+        width: 100%;
+        height: auto;
+    }
 }

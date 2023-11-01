@@ -1,0 +1,329 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  /* ------ Typography -------*/
+  body{font-family: 'Open Sans', sans-serif;}
+  
+  /* ------ Fluid Images -------*/
+  
+  img{max-width:100%;}
+  
+  /* ------ Utility Classes  -------*/
+  .container{
+    margin:0 auto;
+    background:rgba(0,0,0,.15);
+   
+  }
+  
+  /* ------ Helper Classes -------*/
+  .visuallyhidden {
+      border: 0;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+      white-space: nowrap; /* 1 */
+  }
+  
+  /* ------ Global Styles -------*/
+  body{
+    background:#000000;
+    color:#ffffff;
+    line-height:1.6
+  } 
+  a:link, a:visited{
+    color:#adffec;
+  }
+  
+  nav{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding:20px 20px 0px 20px;
+  }
+  nav a:link, nav a:visited{
+    border:1px solid #000;
+    padding:8px 16px;
+    text-align:center;
+    text-decoration:none;
+    color:#222222;
+    text-transform:uppercase;
+    font-size:.75em;
+    background:rgba(0,0,0,.65);
+    transition: background-color .5s ease;
+    color:#fff;
+  }
+  
+  nav a:link:nth-child(1) {
+    border-radius: 0 0 0 20px;
+  }
+  
+  nav a:link:nth-child(4) {
+    border-radius: 0 0 20px 0;
+  } 
+  
+  nav a:hover{
+     background: rgb(0, 255, 255);
+     color: #000000;
+  }
+  
+  main{
+    padding: 1px 20px;
+  }
+  
+  main h1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    font-weight:400;
+    font-variant:small-caps;
+  }
+  main h1:before, main h1:after {
+    background-color: #00d5ff;
+    content: '\a0';
+    flex-grow: 1;
+    height: 1px;
+    position: relative;
+    top: 0.77em;
+  }
+  main h1:before {
+    margin-right:15px;
+  }
+  main h1:after {
+    margin-left:15px;
+  }
+  
+  dl{
+    display: grid;
+    /*shorthand*/
+    grid-template:repeat(8,50px) / 8em 1fr;
+  }
+  
+  dt{
+    font-weight:800;
+    grid-column: 1;
+    padding: 10px 0;
+    border-bottom:1px solid #999;
+    padding-left: 10px;
+  }
+  
+  dd[itemprop="name"] {
+    background-color: rgba(169, 169, 169, 0.3);
+  }
+  
+  dd[itemprop="nationality"] {
+    background-color: rgba(169, 169, 169, 0.3);
+  }
+  
+  dd:nth-child(10) {
+    background-color: rgba(169, 169, 169, 0.3);
+  }
+  
+  dd:nth-child(14) {
+    background-color: rgba(169, 169, 169, 0.3);
+  }
+  
+  dt:nth-child(1) {
+    background-color: rgba(169, 169, 169, 0.3);
+  }
+  
+  dt:nth-child(5) {
+    background-color: rgba(169, 169, 169, 0.3);
+  }
+  
+  dt:nth-child(9) {
+    background-color: rgba(169, 169, 169, 0.3);
+  }
+  
+  dt:nth-child(13) {
+    background-color: rgba(169, 169, 169, 0.3);
+  }
+  
+  dd{
+    margin:0;
+    grid-column: 2;
+    padding: 10px 0;
+    border-bottom:1px solid #999;
+    padding-left: 10px;
+  }
+  .related-links{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+    padding:0;
+  }
+  .related-links .svg-inline--fa{
+    font-size:1.8em;
+    padding-top:7px;
+  }
+  
+  .related-links a{
+    border:1px solid #000;
+    padding:8px 16px;
+    text-align:center;
+    text-decoration:none;
+    color:#222222;
+    text-transform:uppercase;
+    font-size:.75em;
+    background:rgba(0,0,0,.65);
+    transition: background-color 0.5s ease;
+    color:#fff;
+  }
+  
+  .related-links a:hover{
+    background:rgb(0, 255, 255);
+    color: black;
+  }
+  
+  .related-links li{
+    margin-right:20px;
+  }
+  
+  #skills{
+    
+  }
+  #skills li {
+    list-style-type:square;
+  }
+  
+  .job, .certificate{
+    border-bottom:1px solid #999;
+    padding-bottom:20px;
+  }
+  
+  .job *[itemprop="jobTitle"], 
+  .job *[itemprop="name"], 
+  .job *[itemprop="url"], 
+  .job *[itemprop="addressLocality"],
+  .certificate *[itemprop="name"]
+  {
+    display:block;
+  }
+  
+  .job h3{
+    margin:20px 0 0 0;
+  }
+  
+  footer{
+    text-align:center;
+  padding:20px 0;
+  }
+  /* Reorder Source Using Grid */
+  
+  main.container{
+    display: grid;
+    gap: 40px;
+    grid-template-areas:
+      "title"
+      "about"
+      "experience"
+      "education"
+      "skills";
+      background-color: rgba(169, 169, 169, 0.3);
+  }
+  
+  main.container, 
+  header.container {
+    background-color: rgba(169, 169, 169, 0.3);
+  }
+  
+  header.container {
+    border-radius: 20px 20px 0 0;
+  }
+  
+  .page-title{
+    grid-area: title;
+  }
+  #about{
+    grid-area: about;
+  }
+  #skills{
+    grid-area: skills;
+  }
+  #experience{
+    grid-area: experience;
+  }
+  #education{
+    grid-area: education;
+  }
+  
+  
+  /*----------------------Media Queries-----------------------*/
+  
+  @media screen and (min-width:768px){
+  
+    main.container {
+      grid-template-columns: 36.5% auto;
+      grid-template-areas:
+        "title title"
+        "about about"
+        "skills experience"
+        "...... education";
+    }
+    
+    /*Nested Grid*/
+    #about{
+    display:grid;
+    grid-gap:2em;
+    grid-template-columns: 250px 1fr auto;
+    grid-template-areas:
+      "bio details details"
+      "related related related";
+  }
+  .bio{
+    grid-area:bio;
+  }
+  .details{
+    grid-area:details;
+  }
+  .related-links{
+    grid-area:related;
+    border-bottom:1px solid #999;
+    padding-bottom:50px
+  }
+  }
+  
+  @media screen and (min-width:1028px) {
+    main.container {
+      grid-template-columns: 30% auto;
+      grid-template-areas:
+        "title title title"
+        "about about about"
+        "skills education experience"
+        "skills education experience"
+        "skill education experience";
+    }
+  
+    .certificate:nth-child(2) {
+      border-bottom: none;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  /*----------------------Edge Case Tweaks-----------------------*/
+  
+  @media only screen and (max-width: 460px) {
+    .related-links li a svg{display:none;}
+    
+  }
+  
+  @media only screen and (max-width: 395px) {
+  .related-links{
+  flex-direction:column;
+  
+  }
+  .related-links a{
+  display:block;
+    }  
+  }

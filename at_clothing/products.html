@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <meta name="author" content="John Van Brocklin">
+    <title>@Clothing Products</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/icons8-clothes-24.png">
+    <meta name="description" content="Welcome to @Clothing, where you'll find a wide selection of stylish and affordable clothing. From everyday basics to trendy pieces, we have something for every occasion and style. Shop our curated collections to discover the latest fashion trends, or browse our clearance section for great deals on last season's styles. With fast and reliable shipping, easy returns, and exceptional customer service, we're here to help you look and feel your best. Start shopping now and elevate your wardrobe today!">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/202dbdc2e3.js" crossorigin="anonymous"></script>
+    <script src="./js/scripts.js"></script>
+</head>
+<body>
+    <header class="primary">
+        <nav class="mobile-nav">
+            <div class="nav-wrap">
+                <div class="site-brand">
+                    <a href="./index.html" class="brand-link">@Clothing</a>
+                </div>
+                <div class="desktop-nav">
+                    <ul class="desktop-list">
+                        <li class="desktop-item">
+                            <a href="./index.html" class="desktop-link">Home</a>
+                        </li>
+                        <li class="desktop-item">
+                            <a href="./products.html" class="desktop-link">Products</a>
+                        </li>
+                        <li class="desktop-item">
+                            <a href="./about.html" class="desktop-link">About</a>
+                        </li>
+                        <li class="desktop-item">
+                            <a href="./contact.html" class="desktop-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hamburger">
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa-solid fa-bars fa-2xl" style="color: #9e00ff;"></i></a>
+                    </a>
+                </div>
+            </div>
+            <div id="myLinks">
+                <a href="./index.html" class="mobile-link">Home</a>
+                <a href="./products.html" class="mobile-link">Products</a>
+                <a href="./about.html" class="mobile-link">About</a>
+                <a href="./contact.html" class="mobile-link">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="products">
+        <div class="prod-grid-wrap">
+            <article class="post p1">
+                <img src="./img/hat.png" alt="Product" class="prod-img">
+                <h3 class="prod-title">Cowboy Hat</h3>
+                <p class="prod-bio">Grab yourself a stylish cowboy hat made right here in local Arkansas.</p>
+                <p class="prod-price">$25.00</p>
+                <p class="product-btn">Add to cart</p>
+            </article>
+            <article class="post p2">
+                <img src="./img/shirt.png" alt="Product" class="prod-img">
+                <h3 class="prod-title">Shirt</h3>
+                <p class="prod-bio">Here is a totally normal shirt that does totally normal shirt things.</p>
+                <p class="prod-price">$35.00</p>
+                <p class="product-btn">Add to cart</p>
+            </article>
+            <article class="post p3">
+                <img src="./img/gloves.png" alt="Product" class="prod-img res">
+                <h3 class="prod-title">Soccer Keeper Gloves</h3>
+                <p class="prod-bio">I you're anything like me, you love soccer. So why not buy these keeper gloves?</p>
+                <p class="prod-price">$125.00</p>
+                <p class="product-btn">Add to cart</p>
+            </article>
+            <article class="post p4">
+                <img src="./img/pants.png" alt="Product" class="prod-img res">
+                <h3 class="prod-title">Pants</h3>
+                <p class="prod-bio">Here are some very nice pants. If you grow out of them, you can cut the legs off and make some very nice shorts!</p>
+                <p class="prod-price">$45.00</p>
+                <p class="product-btn">Add to cart</p>
+            </article>
+            <article class="post p5">
+                <img src="./img/socks.png" alt="Product" class="prod-img res">
+                <h3 class="prod-title">Socks</h3>
+                <p class="prod-bio">Come on now, everyone needs some more socks.</p>
+                <p class="prod-price">$15.00</p>
+                <p class="product-btn">Add to cart</p>
+            </article>
+            <article class="post p6">
+                <img src="./img/shoes.png" alt="Product" class="prod-img res-p">
+                <h3 class="prod-title">Shoes</h3>
+                <p class="prod-bio">Since you bought the socks, you might as well buy the shoes too.</p>
+                <p class="prod-price">$75.00</p>
+                <p class="product-btn">Add to cart</p>
+            </article>
+        </div>
+    </section>
+
+    <footer class="primary"> 
+        <div class="copy">
+            <p>&copy; 2023 @Clothing</p>
+        </div>
+        <div class="footer-links-wrap">
+            <p><a href="./index.html" class="footer-links">Home</a> - <a href="./about.html" class="footer-links">About</a> - <a href="./contact.html" class="footer-links">Contact</a></p>
+        </div>
+        <div class="top-btn">
+            <a href="#top" class="footer-links">Top</a>
+        </div>
+    </footer>
+</body>
+</html>

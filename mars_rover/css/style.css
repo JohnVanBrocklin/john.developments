@@ -1,0 +1,67 @@
+body {
+  background-color: rgb(36, 36, 36);
+  color: white;
+}
+
+h1 {
+  color: cyan;
+}
+
+.formcontainer {
+  width: 1000px;
+  padding: 5px;
+}
+
+.formlabel {
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+  padding: 5px;
+  color: cyan;
+}
+
+.error {
+  color: red;
+  padding-left: 5px;
+}
+
+table {
+  border-collapse: collapse
+}
+
+th, td {
+text-align: left;
+padding: 8px;
+}
+
+td:first-of-type {
+  color: cyan;
+}
+
+th {
+  color: cyan;
+}
+
+h2 {
+  color: cyan;
+}
+
+.img-container {
+width: 100%;
+padding: 20px;
+}
+
+.clearfix::after {
+content: "";
+clear: both;
+display: table;
+}
+
+img[src="none"] {
+  display:none;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}

@@ -2572,8 +2572,11 @@ input, select, textarea {
 			width: 100%;
 			max-width: 500px;
 			height: auto;
-			margin-bottom: 40px;
 			border-radius: 1em;
+		}
+
+		.mb-none {
+			margin-bottom: 40px;
 		}
 
 		.image img {
